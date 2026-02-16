@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Scope;
 public class Appconfig {
 
     @Bean
-    @Scope("request")
+   // @Scope("request")
     PaymentService paymentService(){
 
         return new PaymentService();
