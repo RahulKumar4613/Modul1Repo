@@ -7,10 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Module1IntroductionApplication implements CommandLineRunner {
-
-	@Autowired
-	PaymentService paymentServiceobj;
-
+	
 	@Autowired
 	NotificationService notificationService;
 
@@ -22,7 +19,7 @@ public class Module1IntroductionApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		paymentServiceobj.pay();
+
 		notificationService.sendMessage("sending....");
 
 	}
